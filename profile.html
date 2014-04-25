@@ -1,0 +1,450 @@
+<html>
+<head>
+<title>My Personal Website</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="assets/style.css" />
+<script type="text/javascript" src="assets/jquery-1.11.0.js"></script>
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+    animateDiv();
+
+$("#menu-profile").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#Profile").offset().top
+    }, 500);
+});
+
+$("#menu-home").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#coverpage").offset().top
+    }, 500);
+});
+
+$("#menu-skills").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#skills").offset().top
+    }, 500);
+});
+
+$("#menu-contact").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 500);
+});
+
+$("#menu-profile").mouseover(function(){
+    $("#menu-profile").animate({fontSize:'2em'},10);
+  $("#menu-profile").animate({
+    
+    
+    height:'50px',
+    width:'130px'
+  });
+  ;
+}); 
+
+$("#menu-profile").mouseleave(function(){
+    $("#menu-profile").animate({fontSize:'25px'},10);
+  $("#menu-profile").animate({
+    
+    height:'28px',
+    width:'100px'
+  });
+  ;
+}); 
+
+$("#menu-home").mouseover(function(){
+    $("#menu-home").animate({fontSize:'2em'},10);
+  $("#menu-home").animate({
+    
+    
+    height:'50px',
+    width:'130px'
+  });
+  ;
+}); 
+
+$("#menu-home").mouseleave(function(){
+    $("#menu-home").animate({fontSize:'25px'},10);
+  $("#menu-home").animate({
+    
+    height:'28px',
+    width:'100px'
+  });
+  ;
+}); 
+
+$("#menu-skills").mouseover(function(){
+    $("#menu-skills").animate({fontSize:'2em'},10);
+  $("#menu-skills").animate({
+    
+    
+    height:'50px',
+    width:'130px'
+  });
+  ;
+}); 
+
+$("#menu-skills").mouseleave(function(){
+    $("#menu-skills").animate({fontSize:'25px'},10);
+  $("#menu-skills").animate({
+    
+    height:'28px',
+    width:'100px'
+  });
+  ;
+}); 
+
+$("#menu-contact").mouseover(function(){
+    $("#menu-contact").animate({fontSize:'2em'},10);
+  $("#menu-contact").animate({
+    
+    
+    height:'50px',
+    width:'130px'
+  });
+  ;
+}); 
+
+$("#menu-contact").mouseleave(function(){
+    $("#menu-contact").animate({fontSize:'25px'},10);
+  $("#menu-contact").animate({
+    
+    height:'28px',
+    width:'100px'
+  });
+  ;
+}); 
+
+$("#1").mouseover(function(){
+    
+  $("#1").animate({
+    
+    
+    height:'65px',
+    width:'65px',
+   
+  },1300);
+  
+}); 
+
+$("#1").mouseleave(function(){
+    
+  $("#1").animate({
+    
+    
+    height:'38px',
+    width:'38px'
+  },1300);
+  
+}); 
+
+
+$("#2").mouseover(function(){
+    
+  $("#2").animate({
+    
+    
+    height:'65px',
+    width:'65px',
+   
+  },1300);
+  
+}); 
+
+$("#2").mouseleave(function(){
+    
+  $("#2").animate({
+    
+    
+    height:'38px',
+    width:'38px'
+  },1300);
+  
+}); 
+
+$("#3").mouseover(function(){
+    
+  $("#3").animate({
+    
+    
+    height:'65px',
+    width:'65px',
+   
+  },1300);
+  
+}); 
+
+$("#3").mouseleave(function(){
+    
+  $("#3").animate({
+    
+    
+    height:'38px',
+    width:'38px'
+  },1300);
+  
+}); 
+
+$("#4").mouseover(function(){
+    
+  $("#4").animate({
+    
+    
+    height:'65px',
+    width:'65px',
+   
+  },1300);
+  
+}); 
+
+$("#4").mouseleave(function(){
+    
+  $("#4").animate({
+    
+    
+    height:'38px',
+    width:'38px'
+  },1300);
+  
+}); 
+
+$("#5").mouseover(function(){
+    
+  $("#5").animate({
+    
+    
+    height:'65px',
+    width:'65px',
+   
+  },1300);
+  
+}); 
+
+$("#5").mouseleave(function(){
+    
+  $("#5").animate({
+    
+    
+    height:'38px',
+    width:'38px'
+  },1300);
+  
+}); 
+
+
+	
+});
+
+function makeNewPosition(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = 720;
+    var w = 1400;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+
+function animateDiv(){
+    var newq = makeNewPosition();
+    $('#trickbox').animate({ top: newq[0], left: newq[1] },3700, function(){
+      animateDiv();        
+    });
+    
+};
+
+
+</script>
+</head>
+<body>
+	
+		
+
+	    <div id="coverpage">
+            <a href="coming-soon.html" target="_blank">
+            <div id="trickbox">
+            <div id="trickheader">Don't Click Me!</div>
+            <div id="trickline">unless you want to know more about me</div>
+            </div>
+            </a>
+
+	    	<div id="menu-container">
+		    <div id="menu">
+			    <div class="menu-item" id="menu-home">HOME</div>
+			    <div class="menu-item" id="menu-profile">PROFILE</div>
+			    <div class="menu-item" id="menu-skills">SKILLS</div>
+			    <div class="menu-item" id="menu-contact">CONTACT</div>
+		    </div>
+	        </div>
+	        <div id="cover"><img src="assets/images/cover.jpg" /></div>
+	        <div id="name">
+	        	Yihao Zhang
+	        </div>
+	        <div id="subheading">Berkeley CS, Junior year</div>
+	    
+	    <div id="icons">
+	    <a href="https://www.facebook.com/yihao.zhang.5" target="_blank" ><img src="assets/images/facebook.png" height="38" width="38" id="1" ></a>
+	    <a href="http://www.linkedin.com/pub/yihao-zhang/25/944/3b" target="_blank"><img src="assets/images/linkedin.png" height="38" width="38" id="2"></a>
+	    <a href="https://plus.google.com/114107208676515743605/posts" target="_blank"><img src="assets/images/google+.png" height="38" width="38" id="3"></a>
+	    <a href="https://github.com/danielzhangyihao" target="_blank" ><img src="assets/images/git.jpeg" height="38" width="38" id="4"></a>
+	    <a href="https://angel.co/yihao-zhang" target="_blank"><img src="assets/images/angel.png" height="38" width="38" id="5"></a>
+	    </div>
+	    
+	    </div>
+	    
+        
+        
+
+	<div id="container">
+		<div id="Profile">
+
+		<div id="thumbnail"><img src="assets/images/3.jpg" /></div>
+		
+		<div id="bio">
+		<div id="title">Profile</div>
+		<div id="description">I am Yihao Zhang, a software developer, an aspiring entrepreneur, studying at Berkeley. I am currently looking for an internship for the summer. I am interested in both front-end and back-end software development.  If you see any positions match my profile, hit me up! </div>
+
+	    </div>
+	    </div>
+		<div id="skills">
+			<div id="header-skills">SKILLS</div>
+			<div class="clear"></div>
+			<div id="skills-content">
+				<div class="skills-main">
+                <div id="skills-java" class="skills-items">
+                	<div class="skills-name">
+                		Java
+                	</div>
+
+                	<div class="skills-stats">
+                		<div class="skills-bar">
+                		</div>
+                		<div class="skills-level">
+                			Proficient
+                		</div>
+                	</div>
+                	<div class="clear">
+                	</div>
+
+                </div>
+                <div id="skills-python" class="skills-items">
+                	<div class="skills-name">
+                		Python
+                	</div>
+
+                	<div class="skills-stats">
+                		<div class="skills-bar">
+                		</div>
+                		<div class="skills-level">
+                			Proficient
+                		</div>
+                	</div>
+                	<div class="clear">
+                	</div>
+
+                </div>
+
+                <div id="skills-c" class="skills-items">
+                	<div class="skills-name">
+                		C
+                	</div>
+
+                	<div class="skills-stats">
+                		<div class="skills-bar">
+                		</div>
+                		<div class="skills-level">
+                			Experienced
+                		</div>
+                	</div>
+                	<div class="clear">
+                	</div>
+
+                </div>
+
+                <div id="skills-HTML5" class="skills-items">
+                	<div class="skills-name">
+                		HTML5
+                	</div>
+
+                	<div class="skills-stats">
+                		<div class="skills-bar">
+                		</div>
+                		<div class="skills-level">
+                			Familiar
+                		</div>
+                	</div>
+                	<div class="clear">
+                	</div>
+
+                </div>
+
+                <div id="skills-CSS3" class="skills-items">
+                	<div class="skills-name">
+                		CSS3
+                	</div>
+
+                	<div class="skills-stats">
+                		<div class="skills-bar">
+                		</div>
+                		<div class="skills-level">
+                			Familiar
+                		</div>
+                	</div>
+                	<div class="clear">
+                	</div>
+
+                </div>
+
+                <div id="skills-JQuery" class="skills-items">
+                	<div class="skills-name">
+                		JQuery
+                	</div>
+
+                	<div class="skills-stats">
+                		<div class="skills-bar">
+                		</div>
+                		<div class="skills-level">
+                			Familiar
+                		</div>
+                	</div>
+                	<div class="clear">
+                	</div>
+                </div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+		<!--above is skills-->
+
+		<div id="contact">
+			<div id="punchline">
+             <div id="hitmeup">
+                  Let's work together!
+			</div>
+				<a id="hey" href="mailto:[zyh1992@berkeley.edu]?Subject=">
+Send me an email</a>
+            
+			<!--<div id="email"> zyh1992@berkeley.edu
+			</div> -->
+		    </div>
+			
+
+		</div>
+		
+		
+	</div>
+</body>
+</html>

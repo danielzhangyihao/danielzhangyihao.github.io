@@ -1,0 +1,47 @@
+/*css for quick facts*/
+
+body {
+    background: #f1f3f5;
+    color: #2a2e32; 
+    font-family: Helvetica, sans-serif; 
+    font-size: 16px; 
+    font-weight: bold;
+    margin:0;
+    height: 100%;
+    width: 500%;
+}
+#containterQ {
+    height: 100%;
+    width: 100%;
+}
+
+.facts-header{
+    font-weight: 900;
+    width: 200;
+    position: fixed;
+    font-size: 40;
+    top: 100;
+    right: -2;
+    /* margin-top: 20; */
+    /* margin-left: 25; */
+    transform: rotate(30deg); 
+    -ms-transform:rotate(30deg); /* IE 9 */ 
+    -webkit-transform: rotate(37deg); /* Opera, Chrome, and Safari */;
+   
+}
+
+.facts-header2{
+    font-weight: 900;
+    width: 200;
+    position: fixed;
+    font-size: 40;
+    top: 109;
+    right: 13;
+    /* margin-top: 20; */
+    /* margin-left: 25; */
+    transform: rotate(30deg); 
+    -ms-transform:rotate(30deg); /* IE 9 */ 
+    -webkit-transform: rotate(306deg); /* Opera, Chrome, and Safari */;
+   
+
+}
